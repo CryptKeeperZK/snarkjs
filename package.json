@@ -1,8 +1,11 @@
 {
-  "name": "snarkjs",
+  "name": "@cryptkeeperzk/snarkjs",
   "type": "module",
   "version": "0.7.1",
-  "description": "zkSNARKs implementation in JavaScript",
+  "description": "zkSNARKs implementation in JavaScript, is a forked version from the main `iden3/snarkjs` repo to make it work with CryptKeeper Browser Extension using `@cryptkeeperzk/ffjavascript` forked version.",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./build/main.cjs",
   "module": "./main.js",
   "exports": {
@@ -48,13 +51,13 @@
     "url": "https://github.com/iden3/snarkjs.git"
   },
   "dependencies": {
+    "@cryptkeeperzk/ffjavascript": "^0.2.59",
     "@iden3/binfileutils": "0.0.11",
     "bfj": "^7.0.2",
     "blake2b-wasm": "^2.4.0",
     "circom_runtime": "0.1.24",
     "ejs": "^3.1.6",
     "fastfile": "0.0.20",
-    "ffjavascript": "0.2.60",
     "js-sha3": "^0.8.0",
     "logplease": "^1.2.15",
     "r1csfile": "0.0.47"

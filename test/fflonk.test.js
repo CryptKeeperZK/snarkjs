@@ -5,7 +5,7 @@ import path from "path";
 import bfj from "bfj";
 import assert from "assert";
 
-import { utils } from "ffjavascript";
+import { utils } from "@cryptkeeperzk/ffjavascript";
 const { stringifyBigInts } = utils;
 
 

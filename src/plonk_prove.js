@@ -22,7 +22,7 @@
 import * as binFileUtils from "@iden3/binfileutils";
 import * as zkeyUtils from "./zkey_utils.js";
 import * as wtnsUtils from "./wtns_utils.js";
-import { Scalar, utils, BigBuffer } from "ffjavascript";
+import { Scalar, utils, BigBuffer } from "@cryptkeeperzk/ffjavascript";
 const {stringifyBigInts} = utils;
 import { Proof } from "./proof.js";
 import { Keccak256Transcript } from "./Keccak256Transcript.js";

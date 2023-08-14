@@ -31,7 +31,7 @@ import clProcessor from "./src/clprocessor.js";
 
 import * as powersOfTau from "./src/powersoftau.js";
 
-import {utils} from "ffjavascript";
+import {utils} from "@cryptkeeperzk/ffjavascript";
 
 const {stringifyBigInts} = utils;
 

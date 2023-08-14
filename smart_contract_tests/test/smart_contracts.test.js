@@ -1,6 +1,6 @@
 import { expect } from "chai";
 
-import { buildBn128 } from "ffjavascript";
+import { buildBn128 } from "@cryptkeeperzk/ffjavascript";
 import path from "path";
 import hardhat from "hardhat";
 const { ethers, run } = hardhat;

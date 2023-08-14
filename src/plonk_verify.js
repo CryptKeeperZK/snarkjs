@@ -19,7 +19,7 @@
 
 /* Implementation of this paper: https://eprint.iacr.org/2019/953.pdf */
 import * as curves from "./curves.js";
-import {  utils }   from "ffjavascript";
+import {  utils }   from "@cryptkeeperzk/ffjavascript";
 const {unstringifyBigInts} = utils;
 import { Keccak256Transcript } from "./Keccak256Transcript.js";
 

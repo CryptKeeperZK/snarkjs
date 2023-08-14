@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var binFileUtils = require('@iden3/binfileutils');
-var ffjavascript = require('ffjavascript');
+var ffjavascript = require('@cryptkeeperzk/ffjavascript');
 var Blake2b = require('blake2b-wasm');
 var readline = require('readline');
 var crypto = require('crypto');

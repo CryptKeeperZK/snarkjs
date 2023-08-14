@@ -18,10 +18,10 @@
 */
 
 import * as curves from "./curves.js";
-import { BigBuffer, utils } from "ffjavascript";
+import { BigBuffer, utils } from "@cryptkeeperzk/ffjavascript";
 import { Proof } from "./proof.js";
 import { Keccak256Transcript } from "./Keccak256Transcript.js";
-import { Scalar } from "ffjavascript";
+import { Scalar } from "@cryptkeeperzk/ffjavascript";
 
 const { unstringifyBigInts } = utils;
 

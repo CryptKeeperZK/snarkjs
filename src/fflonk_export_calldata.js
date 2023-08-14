@@ -18,7 +18,7 @@
 */
 
 import {getCurveFromName} from "./curves.js";
-import {utils} from "ffjavascript";
+import {utils} from "@cryptkeeperzk/ffjavascript";
 
 const {unstringifyBigInts} = utils;
 
