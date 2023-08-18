@@ -33,7 +33,7 @@ export default {
             os: empty,
             crypto: empty,
             readline: empty,
-            ejs: empty,
+            "@cryptkeeperzk/ejs": empty,
             events: empty,
             stream: empty,
             util: empty,

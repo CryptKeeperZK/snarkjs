@@ -1,4 +1,4 @@
-import ejs from "ejs";
+import ejs from "@cryptkeeperzk/ejs";
 
 import exportVerificationKey from "./zkey_export_verificationkey.js";
 import fflonkExportSolidityVerifierCmd from "./fflonk_export_solidity_verifier.js";

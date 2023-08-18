@@ -10,7 +10,7 @@ var crypto = require('crypto');
 var fastFile = require('fastfile');
 var circom_runtime = require('circom_runtime');
 var r1csfile = require('r1csfile');
-var ejs = require('ejs');
+var ejs = require('@cryptkeeperzk/ejs');
 var jsSha3 = require('js-sha3');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }

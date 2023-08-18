@@ -17,7 +17,7 @@
     along with snarkJS. If not, see <https://www.gnu.org/licenses/>.
 */
 
-import ejs from "ejs";
+import ejs from "@cryptkeeperzk/ejs";
 import {getCurveFromName} from "./curves.js";
 import {utils} from "@cryptkeeperzk/ffjavascript";
 
