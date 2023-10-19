@@ -16,9 +16,9 @@ describe("Smart contracts test suite", function () {
 
     // Load templates
     const templates = {};
-    templates.groth16 = fs.readFileSync(path.join("../templates", "verifier_groth16.sol.@cryptkeeperzk/ejs"), "utf8");
-    templates.plonk = fs.readFileSync(path.join("../templates", "verifier_plonk.sol.@cryptkeeperzk/ejs"), "utf8");
-    templates.fflonk = fs.readFileSync(path.join("../templates", "verifier_fflonk.sol.@cryptkeeperzk/ejs"), "utf8");
+    templates.groth16 = fs.readFileSync(path.join("../templates", "verifier_groth16.sol.ejs"), "utf8");
+    templates.plonk = fs.readFileSync(path.join("../templates", "verifier_plonk.sol.ejs"), "utf8");
+    templates.fflonk = fs.readFileSync(path.join("../templates", "verifier_fflonk.sol.ejs"), "utf8");
 
     let verifierContract;
     let curve;
