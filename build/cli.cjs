@@ -6,7 +6,7 @@ var fs = require('fs');
 var url = require('url');
 var r1csfile = require('r1csfile');
 var fastFile = require('fastfile');
-var ffjavascript = require('ffjavascript');
+var ffjavascript = require('@cryptkeeperzk/ffjavascript');
 var Blake2b = require('blake2b-wasm');
 var readline = require('readline');
 var crypto = require('crypto');
@@ -13077,13 +13077,13 @@ async function zkeyExportSolidityVerifier(params, options) {
     const templates = {};
 
     if (await fileExists(path__default["default"].join(__dirname$1, "templates"))) {
-        templates.groth16 = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "templates", "verifier_groth16.sol.@cryptkeeperzk/ejs"), "utf8");
-        templates.plonk = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "templates", "verifier_plonk.sol.@cryptkeeperzk/ejs"), "utf8");
-        templates.fflonk = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "templates", "verifier_fflonk.sol.@cryptkeeperzk/ejs"), "utf8");
+        templates.groth16 = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "templates", "verifier_groth16.sol.ejs"), "utf8");
+        templates.plonk = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "templates", "verifier_plonk.sol.ejs"), "utf8");
+        templates.fflonk = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "templates", "verifier_fflonk.sol.ejs"), "utf8");
     } else {
-        templates.groth16 = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "..", "templates", "verifier_groth16.sol.@cryptkeeperzk/ejs"), "utf8");
-        templates.plonk = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "..", "templates", "verifier_plonk.sol.@cryptkeeperzk/ejs"), "utf8");
-        templates.fflonk = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "..", "templates", "verifier_fflonk.sol.@cryptkeeperzk/ejs"), "utf8");
+        templates.groth16 = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "..", "templates", "verifier_groth16.sol.ejs"), "utf8");
+        templates.plonk = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "..", "templates", "verifier_plonk.sol.ejs"), "utf8");
+        templates.fflonk = await fs__default["default"].promises.readFile(path__default["default"].join(__dirname$1, "..", "templates", "verifier_fflonk.sol.ejs"), "utf8");
     }
 
     const verifierCode = await exportSolidityVerifier(zkeyName, templates, logger);

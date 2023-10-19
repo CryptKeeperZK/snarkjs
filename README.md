@@ -512,7 +512,7 @@ npm install snarkjs
 ```
 
 ```js
-const snarkjs = require("snarkjs");
+const snarkjs = require("@cryptkeeperzk/snarkjs");
 const fs = require("fs");
 
 async function run() {

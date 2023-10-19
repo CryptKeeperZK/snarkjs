@@ -5,7 +5,7 @@ import path from "path";
 import hardhat from "hardhat";
 const { ethers, run } = hardhat;
 
-import * as snarkjs from "snarkjs";
+import * as snarkjs from "@cryptkeeperzk/snarkjs";
 
 import fs from "fs";
 
